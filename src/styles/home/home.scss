@@ -570,3 +570,48 @@
     }
   }
 }
+//========= Discover NFT ============
+.discover-nft-full-area {
+  .discover-inner-container {
+    .discover-nft-header {
+      h3 {
+        color: #000;
+        font-size: 32px;
+        font-family: Integral CF;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .discover-nft-filter-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .discover-filter-left {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+            li {
+              padding: 10px 24px;
+              border-radius: 100px;
+              background: rgba(220, 220, 220, 0.2);
+            }
+          }
+        }
+        .discover-sorting-right {
+          .dropdown {
+            button {
+              padding: 10px 24px;
+              border-radius: 100px;
+              background: rgba(220, 220, 220, 0.2);
+              color: #000;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
