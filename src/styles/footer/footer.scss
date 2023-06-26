@@ -1,0 +1,101 @@
+.main-footer-main-area-wrap {
+  padding: 60px 0;
+  padding-bottom: 20px;
+  .main-footer-inner-container {
+    .footer-single-item {
+      h3 {
+        color: #000;
+        font-size: 24px;
+        font-family: Integral CF;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+      h4 {
+        color: #000;
+        font-size: 18px;
+        font-family: DM Sans;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 14px;
+      }
+      p {
+        color: #565656;
+        font-size: 14px;
+        font-family: DM Sans;
+        font-weight: 500;
+        line-height: 160%;
+      }
+      .footer-social-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          width: 40px;
+          height: 40px;
+          text-decoration: none;
+          i {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 50%;
+            &.bx.bxl-facebook-circle {
+              color: #fff;
+              background: rgba(59, 89, 152, 1);
+            }
+            &.bx.bxl-twitter {
+              color: #fff;
+              background: rgba(85, 172, 238, 1);
+            }
+            &.bx.bxl-linkedin {
+              color: #fff;
+              background: rgba(0, 122, 185, 1);
+            }
+          }
+        }
+      }
+      ul {
+        padding-left: 0;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            color: #3d3d3d;
+            font-size: 14px;
+            font-family: DM Sans;
+            font-weight: 500;
+            line-height: 200%;
+          }
+        }
+      }
+      .footer-subscriber {
+        width: 100%;
+        padding: 6px 8px;
+        border-radius: 58px;
+        display: flex;
+        border: 2px solid #f1f1f1;
+        background: #fff;
+        input {
+          width: calc(100% - 150px);
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        label {
+          width: 150px;
+          display: inline-flex;
+          padding: 6px 16px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 45.595px;
+          background: #2639ed;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
