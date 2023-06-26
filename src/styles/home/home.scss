@@ -420,3 +420,153 @@
     }
   }
 }
+
+//======= Nft Feature =================
+.nft-feature-collection {
+  background: rgba(217, 224, 236, 0.2);
+  backdrop-filter: blur(25px);
+  padding: 80px 0;
+  .nft-feature-collection-inner-container {
+    .nft-feature-collection-title {
+      margin-bottom: 40px;
+      h3 {
+        color: #000;
+        font-size: 28px;
+        font-family: Integral CF;
+        font-weight: 700;
+      }
+    }
+    .nft-feature-single-card {
+      .nft-feature-image-wrap {
+        display: flex;
+        gap: 10px;
+        height: 310px;
+        .feature-image {
+          width: calc(100% - 120px);
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+        .feature-image-list {
+          width: 110px;
+          height: 100%;
+          ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            li {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .nft-feature-card-profile {
+        padding: 20px 0;
+        h3 {
+          color: #000;
+          font-size: 20px;
+          font-family: DM Sans;
+          font-weight: 700;
+        }
+        .nft-feature-card-profile-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+          }
+          .nft-profile-item-info {
+            p {
+              padding: 6px 20px;
+              justify-content: center;
+              align-items: center;
+
+              border-radius: 60px;
+              border: 1px solid #2639ed;
+              color: #2639ed;
+              font-size: 11.001px;
+              font-family: DM Sans;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//======== Create NFT Account =================
+.create-nft-account-full-area {
+  margin: 80px 0;
+  .create-nft-account-inner-container {
+    .create-nft-account-left {
+      .c-n-a-l-profile-view-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .c-n-a-r-profile-view-wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        .single-profile-view {
+          &:last-child {
+            width: 85%;
+          }
+        }
+      }
+      .single-profile-view {
+        position: relative;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        &:last-child {
+          width: 70%;
+        }
+        > img {
+          width: 100%;
+        }
+        .profile-image {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          right: -24px;
+          bottom: -24px;
+
+          border-radius: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .create-nft-account-right {
+      h3 {
+        color: #000;
+        font-size: 32px;
+        font-family: Integral CF;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #636363;
+        font-size: 18px;
+        font-family: DM Sans;
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
