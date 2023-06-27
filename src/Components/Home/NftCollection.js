@@ -101,7 +101,7 @@ const NftCollection = () => {
                     <div className="top-collection-list">
                       {topNftData &&
                         topNftData?.map((item, idx) => (
-                          <div className="top-collection-single-item">
+                          <div className="top-collection-single-item" key={idx}>
                             <div className="t-c-ps-item-left">
                               <h4>1</h4>
                               <div className="t-c-ps-item-left-image-with-badge">

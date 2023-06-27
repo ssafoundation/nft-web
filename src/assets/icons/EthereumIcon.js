@@ -9,7 +9,7 @@ const EthereumIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="ethereum 2" clip-path="url(#clip0_0_143)">
+      <g id="ethereum 2" clipPath="url(#clip0_0_143)">
         <path
           id="Vector"
           d="M12.671 11.3796L6.50006 15.2463L0.325058 11.3796L6.50006 0.512939L12.671 11.3796ZM6.50006 16.4879L0.325058 12.6213L6.50006 21.8463L12.6751 12.6213L6.50006 16.4879Z"

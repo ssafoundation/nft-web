@@ -61,7 +61,7 @@ const Hero = () => {
               >
                 {heroSlider &&
                   heroSlider?.map((slide, idx) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={idx}>
                       <div
                         className="single-hero-slider-card"
                         style={{ backgroundImage: `url(${slide?.sliderBg})` }}

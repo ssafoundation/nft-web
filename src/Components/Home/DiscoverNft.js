@@ -17,6 +17,9 @@ const DiscoverNft = () => {
       : discoverNftData?.filter((item) =>
           item.category.includes(selectCategory)
         );
+  // const handleReverse = () => {
+  //   filterNftCategory.reverse();
+  // };
 
   return (
     <div className="discover-nft-full-area">
@@ -37,6 +40,7 @@ const DiscoverNft = () => {
                     <li
                       className={selectCategory === menu ? "active" : ""}
                       onClick={() => setSelectCategory(menu)}
+                      key={idx}
                     >
                       {menu}
                     </li>
@@ -46,17 +50,11 @@ const DiscoverNft = () => {
               <div className="discover-sorting-right">
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">
-                    <i class="bx bx-filter"></i> All Filters
+                    <i className="bx bx-filter"></i> All Filters
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">
-                      Another action
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">
-                      Something else
-                    </Dropdown.Item>
+                    <Dropdown.Item>A to Z</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
@@ -66,7 +64,7 @@ const DiscoverNft = () => {
             <Row>
               {filterNftCategory.length &&
                 filterNftCategory?.map((discover, idx) => (
-                  <Col lg="3" className="mb-3">
+                  <Col lg="3" className="mb-3" key={idx}>
                     <div className="single-discover-item">
                       <div className="discover-image">
                         <img src={discover?.featureImage} alt="" />
