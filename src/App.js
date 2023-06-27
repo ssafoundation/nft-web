@@ -5,9 +5,9 @@ import "./main.scss";
 import router from "./Components/router/router";
 function App() {
   return (
-    <div className="App">
+    <main>
       <RouterProvider router={router} />
-    </div>
+    </main>
   );
 }
 

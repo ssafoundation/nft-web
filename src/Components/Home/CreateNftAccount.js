@@ -10,10 +10,10 @@ const CreateNftAccount = () => {
       <Container>
         <div className="create-nft-account-inner-container">
           <Row>
-            <Col lg="7">
+            <Col md="7" className="">
               <div className="create-nft-account-left">
                 <Row>
-                  <Col lg="6">
+                  <Col xs="6">
                     <div className="c-n-a-l-profile-view-wrap">
                       <div className="single-profile-view">
                         <img src={image1} alt="" />
@@ -29,7 +29,7 @@ const CreateNftAccount = () => {
                       </div>
                     </div>
                   </Col>
-                  <Col lg="6">
+                  <Col xs="6">
                     <div className="c-n-a-r-profile-view-wrap">
                       <div className="single-profile-view">
                         <img src={image3} alt="" />
@@ -42,7 +42,7 @@ const CreateNftAccount = () => {
                 </Row>
               </div>
             </Col>
-            <Col lg="5" className="my-auto">
+            <Col md="5" className="my-auto">
               <div className="create-nft-account-right">
                 <h3>Create and sell your NFTs</h3>
                 <p>

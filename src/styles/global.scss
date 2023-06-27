@@ -1,5 +1,8 @@
 body {
   font-family: DM Sans;
+  main {
+    overflow: hidden;
+  }
   .nft-primary-btn {
     border: 1px solid #3d00b7;
     background: #3d00b7;
@@ -10,6 +13,11 @@ body {
     font-family: DM Sans;
     font-weight: 700;
     letter-spacing: 0.56px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #fff;
+      box-shadow: inset 200px 0px 0 0px #1f1f1b;
+    }
   }
   .nft-secondary-btn {
     border: 1px solid #3d00b7;
@@ -21,5 +29,10 @@ body {
     font-family: DM Sans;
     font-weight: 700;
     letter-spacing: 0.56px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #fff;
+      box-shadow: inset 200px 0px 0 0px #3d00b7;
+    }
   }
 }

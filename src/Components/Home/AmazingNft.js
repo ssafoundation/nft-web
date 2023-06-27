@@ -9,14 +9,14 @@ const AmazingNft = () => {
       <Container>
         <div className="amazing-nft-inner-container">
           <Row>
-            <Col lg="4">
+            <Col lg="4" className="mb-3">
               <div className="amazing-nft-left-title">
                 <h2>The amazing NFT art of the world here</h2>
               </div>
             </Col>
-            <Col lg="8">
-              <Row>
-                <Col lg="6">
+            <Col lg="8" className="mb-3">
+              <Row className="g-0">
+                <Col lg="6" className="mb-3">
                   <div className="amazing-nft-right-single-item">
                     <div className="amazing-nft-s-i-icon">
                       <CardTickIcon />

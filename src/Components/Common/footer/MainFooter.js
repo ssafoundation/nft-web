@@ -97,6 +97,9 @@ const MainFooter = () => {
           </Row>
         </div>
       </Container>
+      <div className="footer-copyright-area">
+        <p>Copyright © 2022 Avi Yansah</p>
+      </div>
     </div>
   );
 };

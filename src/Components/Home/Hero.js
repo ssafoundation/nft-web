@@ -7,13 +7,14 @@ import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { heroSlider } from "../../assets/data/heroSlider";
 import EthereumIcon from "../../assets/icons/EthereumIcon";
+import dotBg from "../../assets/images/home/hero/Dot.svg";
 import sliderBadge from "../../assets/images/home/hero/slider-label.png";
 const Hero = () => {
   return (
     <Container>
       <div className="hero-main-area-wrap">
         <Row>
-          <Col lg="7">
+          <Col lg="7" className="my-auto">
             <div className="hero-left-content">
               <h2>Discover, and collect Digital Art NFTs </h2>
               <p>
@@ -21,6 +22,9 @@ const Hero = () => {
                 tokens (NFTs). Buy, Sell, and discover exclusive digital assets.
               </p>
               <div className="hero-left-bottom-statistics">
+                <div className="dot-bg-image-hero">
+                  <img src={dotBg} alt="" />
+                </div>
                 <Link to="/" className="nft-primary-btn">
                   Explore Now
                 </Link>
@@ -58,7 +62,6 @@ const Hero = () => {
                 {heroSlider &&
                   heroSlider?.map((slide, idx) => (
                     <SwiperSlide>
-                      {console.log(slide)}
                       <div
                         className="single-hero-slider-card"
                         style={{ backgroundImage: `url(${slide?.sliderBg})` }}

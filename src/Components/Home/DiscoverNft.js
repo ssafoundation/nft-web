@@ -1,29 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Dropdown, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { discoverNftData } from "../../assets/data/dicoverNftData";
 import EthereumIcon from "../../assets/icons/EthereumIcon";
 import profile from "../../assets/images/home/hero/profile.png";
 const DiscoverNft = () => {
+  const [selectCategory, setSelectCategory] = useState("");
   const allCategories = [];
   discoverNftData.forEach((item) => {
     allCategories.push(...item.category);
   });
-
   const uniqueCategories = [...new Set(allCategories)];
+  const filterNftCategory =
+    selectCategory === ""
+      ? discoverNftData
+      : discoverNftData?.filter((item) =>
+          item.category.includes(selectCategory)
+        );
 
   return (
     <div className="discover-nft-full-area">
       <Container>
         <div className="discover-inner-container">
           <div className="discover-nft-header">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <h3>Discover more NFTs</h3>
             <div className="discover-nft-filter-wrap">
               <div className="discover-filter-left">
                 <ul>
-                  <li>All Select</li>
+                  <li
+                    onClick={() => setSelectCategory("")}
+                    className={selectCategory === "" ? "active" : ""}
+                  >
+                    All Select
+                  </li>
                   {uniqueCategories?.map((menu, idx) => (
-                    <li>{menu}</li>
+                    <li
+                      className={selectCategory === menu ? "active" : ""}
+                      onClick={() => setSelectCategory(menu)}
+                    >
+                      {menu}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -48,8 +64,8 @@ const DiscoverNft = () => {
           </div>
           <div className="discover-nft-items">
             <Row>
-              {discoverNftData &&
-                discoverNftData?.map((discover, idx) => (
+              {filterNftCategory.length &&
+                filterNftCategory?.map((discover, idx) => (
                   <Col lg="3" className="mb-3">
                     <div className="single-discover-item">
                       <div className="discover-image">

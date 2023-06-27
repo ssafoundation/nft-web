@@ -1,7 +1,7 @@
 .main-footer-main-area-wrap {
-  padding: 60px 0;
-  padding-bottom: 20px;
   .main-footer-inner-container {
+    padding: 60px 0;
+    padding-bottom: 20px;
     .footer-single-item {
       h3 {
         color: #000;
@@ -97,5 +97,8 @@
         }
       }
     }
+  }
+  .footer-copyright-area {
+    text-align: center;
   }
 }

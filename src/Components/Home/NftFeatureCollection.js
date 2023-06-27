@@ -13,7 +13,7 @@ const NftFeatureCollection = () => {
           <Row>
             {nftFeatureCollectionData &&
               nftFeatureCollectionData?.map((item, idx) => (
-                <Col lg="4">
+                <Col lg="4" className="mb-3">
                   <div className="nft-feature-single-card">
                     <div className="nft-feature-image-wrap">
                       <div className="feature-image">

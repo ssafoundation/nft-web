@@ -15,7 +15,7 @@ const NftCollection = () => {
       <Container>
         <div className="nft-collection-inner-container">
           <Row>
-            <Col lg="4">
+            <Col lg="4" className="mb-3">
               <div className="single-collection-card">
                 <img src={image1} alt="" />
                 <div className="single-nft-collection-card-bottom">
@@ -35,9 +35,9 @@ const NftCollection = () => {
                 </div>
               </div>
             </Col>
-            <Col lg="8">
+            <Col ld="8" className="mb-3">
               <Row>
-                <Col lg="6">
+                <Col md="6">
                   <div className="nft-collection-list">
                     <div className="nft-single-collection-list-item">
                       <div className="nft-s-c-l-i-left-image">
@@ -92,7 +92,7 @@ const NftCollection = () => {
                     </div>
                   </div>
                 </Col>
-                <Col lg="6">
+                <Col md="6">
                   <div className="top-collection-over">
                     <div className="top-collect-header">
                       <h3>Top Collections over </h3>
